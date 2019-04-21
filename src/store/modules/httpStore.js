@@ -26,7 +26,9 @@ const actions = {
     getReqData:({commit},reqDataObj)=>{
         return vue.http.get(reqDataObj.url).then((response)=>{
         return Promise.resolve(response.body)
-        }).catch((err)=>{return Promise.reject(err)})
+        }).catch((err)=>{
+            return Promise.reject(err)
+        })
     }
 }
 

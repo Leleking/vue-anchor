@@ -4,7 +4,7 @@ import { router } from './router'
 import store from './store'
 import plugins  from './utils/plugins'
 Vue.use(plugins)
-Vue.config.productionTip = false
+Vue.config.productionTip = !process.env.VUE_APP_DEBUG
 
 /* eslint-disable no-new*/
 new Vue({
