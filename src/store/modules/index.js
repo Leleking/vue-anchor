@@ -1,7 +1,7 @@
-import httpStore from './httpStore'
-export default{
-    httpStore
-}
+import httpStore from "./httpStore";
+export default {
+  httpStore
+};
 /* 
 import camelCase from 'lodash/camelCase'
 const requireModule = require.context('.',false,/\.js$/)
